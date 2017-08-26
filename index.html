@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .jumbotron {
+            background-color: black;
+            color: #fff;
+            opacity: 0.8;
+        }
+        .addTransformer {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: black;
+            opacity: 0.8;
+            color: white;
+        }
+        body {
+            background-image: url('https://i.ytimg.com/vi/8QunirzLUnQ/maxresdefault.jpg'); 
+            background-size: 100%;
+        }
+        #criteria {
+            color: black;
+            width: 70%;
+        }
+        .label {
+            font-size: 16px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Aequilibrium | The Transformation Company</h1>
+</div>
+
+<div class="text-center addTransformer">
+    <h2>Add Autobot</h2>
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label class="control-label col-sm-2">Name:</label>
+            <div class="col-sm-7">
+                <input class="form-control" id="name-aut" placeholder="Enter Name" maxlength="15">
+            </div>
+            <div class="col-sm-2">
+                <button id="create-aut" class="btn btn-primary">Create</button>
+            </div>
+        </div>
+    </form>
+    <h2>Add Decepticon</h2>
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label class="control-label col-sm-2">Name:</label>
+            <div class="col-sm-7">
+                <input class="form-control" id="name-dec" placeholder="Enter Name" maxlength="15">
+            </div>
+            <div class="col-sm-2">
+                <button id="create-dec" class="btn btn-danger">Create</button>
+            </div>
+        </div>
+    </form>
+    <button id="fight" class="btn btn-success btn-lg">Let the games begin</button>
+    <button id="runtests" class="btn btn-success btn-lg">Run Tests</button>
+</div>
+
+<script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>
